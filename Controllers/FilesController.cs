@@ -37,7 +37,7 @@ namespace AwsS3.Controllers
         }
 
         [HttpGet]
-        [Route("preview")]
+        [Route("download")]
         public async Task<IActionResult> GetFileByKeyAsync(string bucketName, string key)
         {
             var result = await _fileService.GetFileByKeyAsync(bucketName, key);
